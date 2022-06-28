@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <div className='flex flex-col h-screen md:grid md:grid-cols-6 py-20 items-center md:items-end justify-center md:content-center'>
       <div id="image" className='md:col-start-1 lg:col-start-1 lg:col-span-3 md:col-span-3 md:place-self-auto'>  
-        <img src='/src/refs/icon.png' alt='headshot' className='hover:shadow-md md:hover:shadow-lg hover:shadow-green-400 md:hover:shadow-green-400 dark:hover:shadow-emerald-400 w-56 m-auto sm:w-80 md:w-96 lg:w-96 transition ease-in-out duration-300 rounded-full border-4 md:border-8 border-green-400 dark:border-emerald-400 hover:scale-105' />
+        <img src='/src/refs/icon/light.png' alt='headshot' className='hover:shadow-md md:hover:shadow-lg hover:shadow-emerald-400 md:hover:shadow-emerald-400 dark:hover:shadow-green-400 w-56 m-auto sm:w-80 md:w-96 lg:w-96 transition ease-in-out duration-300 rounded-full border-4 md:border-8 border-emerald-400 dark:border-green-400 hover:scale-105' />
       </div>
       <div id="text" className='col-start-4 col-span-3 md:pr-20'>
         <h1 className='text-center md:text-right transition ease-in-out hover:drop-shadow-2xl duration-300 text-4xl sm:text-6xl lg:text-8xl mb-1 pt-5 md:pt-0 md:mb-3 text-green-400 dark:text-emerald-400 font-bold hover:scale-110'>john</h1>
