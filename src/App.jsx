@@ -35,11 +35,11 @@ function App() {
 
 	return (
 		<>
-			<link rel="icon" type="image/x-icon" href={theme === "light" ? "/src/light.ico" : '/src/dark.ico'} />
+			<link rel="icon" type="image/x-icon" href={theme === "light" ? "/assets/light.ico" : '/assets/dark.ico'} />
 			<div className="font-scp bg-zinc-100 dark:bg-zinc-700 transition-colors duration-300">
 				<div id="top" className=''>
 					<a href="#top" className='transition ease-in-out duration-300 fixed md:items-start z-10 left-3 top-1 md:left-10 hover:drop-shadow-xl hover:scale-110'>
-						<img src={theme === "light" ? "/src/img/icon/light.png" : '/src/img/icon/dark.png'} alt="logo" className="w-12 h-12 md:w-16 md:h-16 hover:drop-shadow-xl"></img>
+						<img src={theme === "light" ? "assets/img/icon/light.png" : 'assets/img/icon/dark.png'} alt="logo" className="w-12 h-12 md:w-16 md:h-16 hover:drop-shadow-xl"></img>
 					</a>
 					<button 
 						type='button' 

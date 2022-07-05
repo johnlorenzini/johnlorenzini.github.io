@@ -5,6 +5,6 @@ import './styles/tailwind.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App className="bg-zinc-50 dark:bg-zinc-600 " />
+    <App className="bg-zinc-50 dark:bg-zinc-700 " />
   </React.StrictMode>
 )
