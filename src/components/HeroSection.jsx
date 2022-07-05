@@ -4,7 +4,7 @@ export default function HeroSection({theme}) {
   return (
     <div className='flex flex-col h-screen md:grid md:grid-cols-6 py-20 items-center md:items-end justify-center md:content-center place-items-center'>
       <div id="image" className='md:col-start-1 lg:col-start-1 lg:col-span-3 md:col-span-3'>  
-        <img src='/src/refs/icon/dark.png' alt='headshot' className='sm:translate-y-0 hover:shadow-md md:hover:shadow-lg hover:shadow-emerald-400 md:hover:shadow-emerald-400 dark:hover:shadow-green-400 w-64 m-auto sm:w-80 md:w-96 lg:w-96 transition ease-in-out duration-300 rounded-full border-4 md:border-8 border-emerald-400 dark:border-green-400 hover:scale-105' />
+        <img src='/src/refs/pfp.png' alt='headshot' className='sm:translate-y-0 hover:shadow-md md:hover:shadow-lg hover:shadow-emerald-400 md:hover:shadow-emerald-400 dark:hover:shadow-green-400 w-64 m-auto sm:w-80 md:w-96 lg:w-96 transition ease-in-out duration-300 rounded-full border-4 md:border-8 border-emerald-400 dark:border-green-400 hover:scale-105' />
       </div>
       <div id="text" className='col-start-4 col-span-3 md:pr-20 -translate-y-10 sm:translate-y-4 md:translate-y-0'>
         <h1 className='text-center md:text-right   transition ease-out sm:hover:drop-shadow-xl duration-300 scale-50 sm:scale-75 truncate md:scale-75 lg:scale-100 text-8xl text-green-400 dark:text-emerald-400 font-extrabold lg:translate-x-0 sm:-translate-y-1 md:translate-x-16 xs:translate-y-8 md:translate-y-4 lg:translate-y-0 sm:hover:scale-90 lg:hover:scale-110'>john
