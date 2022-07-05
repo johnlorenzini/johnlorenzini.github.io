@@ -35,7 +35,6 @@ function App() {
 
 	return (
 		<>
-			<link rel="icon" type="image/x-icon" href={theme === "light" ? "/assets/light.ico" : '/assets/dark.ico'} />
 			<div className="font-scp bg-zinc-100 dark:bg-zinc-700 transition-colors duration-300">
 				<div id="top" className=''>
 					<a href="#top" className='transition ease-in-out duration-300 fixed md:items-start z-10 left-3 top-1 md:left-10 hover:drop-shadow-xl hover:scale-110'>
