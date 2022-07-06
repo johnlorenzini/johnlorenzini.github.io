@@ -35,7 +35,7 @@ function SkillSection({theme}) {
 
 
   return (
-    <div className='transition ease-in-out duration-300 flex flex-col justify-center snap-always snap-start h-fit bg-emerald-400 dark:bg-green-400 shadow-inner shadow-zinc-50 dark:shadow-zinc-700'>
+    <div className='transition ease-in-out duration-300 flex flex-col justify-center snap-always snap-start h-fit bg-emerald-400 dark:bg-green-400 shadow-2xl shadow-emerald-400 dark:shadow-green-400'>
         <h1 className='md:col-start-2 text-center transition ease-in-out duration-300 text-8xl sm:scale-100 scale-50 sm:pt-20 md:py-20 text-zinc-50 dark:text-zinc-700 font-bold '>
             skills
         </h1>

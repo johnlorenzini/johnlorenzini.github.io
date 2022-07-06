@@ -22,7 +22,7 @@ export default function HeroSection({theme}) {
           </a>
         </div>
         <p className='transition ease-in-out duration-300 font-bold text-center md:text-right text-zinc-700 dark:text-zinc-50 text-sm px-10 md:px-0 sm:text-lg'>developer</p>
-        <p className='transition ease-in-out duration-300 font-medium text-center md:text-right text-zinc-700 dark:text-zinc-50 text-sm px-10 md:px-0 sm:text-lg'>computer science student at <a href="https://www.uci.edu" target="_blank" className="font-bold underline decoration-2 underline-offset-2 md:underline-offset-4 md:decoration-4 decoration-emerald-400 dark:decoration-green-400 hover:decoration-yellow-500 dark:hover:decoration-yellow-500">uc irvine</a></p>
+        <p className='transition ease-in-out duration-300 font-medium text-center md:text-right text-zinc-700 dark:text-zinc-50 text-sm px-10 md:px-0 sm:text-lg'>computer science student at <a href="https://www.uci.edu" target="_blank" className="font-bold underline decoration-2 underline-offset-2 md:underline-offset-4 md:decoration-4 decoration-emerald-400 dark:decoration-green-400 hover:underline hover:decoration-yellow-500 dark:hover:decoration-yellow-500">uc irvine</a></p>
       </div>
     </div>
   )
