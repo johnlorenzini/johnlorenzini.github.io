@@ -1,6 +1,6 @@
 # typhic.com
 
-personal portfolio built with:
+work in progress personal portfolio built with:
 - react
 - vite.js
 - tailwindcss
