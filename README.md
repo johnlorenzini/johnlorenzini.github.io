@@ -1,4 +1,4 @@
-# typhic.com
+# [View Website](typhic.com)
 
 work in progress personal portfolio built with:
 - react
