@@ -41,7 +41,7 @@ function App() {
   return (
     <>
         <meta name="theme-color" content={theme==="light" ? "#D59AFF" : "#542F73"} />
-        <img src={theme === 'light' ? './src/light.jpg' : './src/dark.jpg'} alt="" className='w-full h-full scale-150 fixed'/>
+        <img src={theme === 'light' ? './img/light.jpg' : './img/dark.jpg'} alt="" className='w-full h-full scale-150 fixed'/>
         <button 
             type='button' 
             onClick={changeTheme}
@@ -49,7 +49,6 @@ function App() {
             {theme==='light' ? <TbSun></TbSun> : <TbMoonStars></TbMoonStars>}
         </button>
         <div className='font-pop backdrop-blur-3xl usebg'>
-            
             <TypingHeader id="top"></TypingHeader>
             <HeroSection theme={theme}></HeroSection>
         </div>
