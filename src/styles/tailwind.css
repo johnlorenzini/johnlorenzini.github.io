@@ -8,18 +8,17 @@ html{
     -moz-osx-font-smoothing: grayscale;
 }
 
-.wrapper {
-    height: 100vh;
-    /*This part is important for centering*/
-    display: grid;
-    place-items: center;
+.buttonPos{
+    z-index: 1;
 }
+
 .navPad{
     padding-bottom: 5%;
 }
 .navPad2{
-    padding-top: 6%;
+    padding-top: 5%;
 }
+
 .type {
     width: 11.5ch;
     animation: typing 11.7s steps(20), blink 1s step-end infinite;
@@ -27,10 +26,6 @@ html{
     white-space: nowrap;
     overflow: hidden;
     font-size: 2em;
-}
-
-.fixBackground{
-    background-attachment: fixed;
 }
 
 @keyframes typing {
@@ -60,11 +55,11 @@ html{
 }
 
 .cardBG{
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
 }
       
 @keyframes blink {
     50% {
-      border-color: transparent
+      border-color: rgba(255, 255, 255, 0);
     }
 }

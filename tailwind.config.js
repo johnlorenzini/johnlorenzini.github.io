@@ -14,7 +14,10 @@ module.exports = {
 
       },
       fontFamily: {
-        pop: ['Poppins', 'sans-serif']
+        pop: ['Poppins', 'sans-serif'],
+      },
+      boxShadow: {
+        'innerXL' : 'inset 4px 4px 4px 4px rgb(0 0 0 / 0.05)',
       },
     },
   },

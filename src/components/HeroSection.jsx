@@ -4,9 +4,12 @@ import NavDown from './NavDown'
 
 function HeroSection({theme}) {
   return (
-    <div id="about" className='min-h-screen flex items-center justify-center pb-10'>
+    <div id="about" className='min-h-screen flex flex-col justify-center items-center pb-8'>
+      <div className='my-auto w-2/3 md:w-3/5'>
         <HeroCard theme={theme}></HeroCard>
-        <NavDown target="#skills" delay="100"></NavDown>
+      </div>
+      <NavDown target="#skills" delay="500" anchor={"#card"}></NavDown>
+  
     </div>
   )
 }
