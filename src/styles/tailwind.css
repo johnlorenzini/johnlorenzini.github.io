@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+}
+.navPad{
+    padding-bottom: 5%;
+}
+.navPad2{
+    padding-top: 6%;
+}
+.type {
+    width: 11.5ch;
+    animation: typing 11.7s steps(20), blink 1s step-end infinite;
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 2em;
+}
+
+.fixBackground{
+    background-attachment: fixed;
+}
+
+@keyframes typing {
+    0% {
+      width: 0;
+    }
+    24.3%{
+        width:11.5ch;
+    }
+    50%{
+        width:11.5ch;
+    }
+    74.3%{
+        width:0;
+    }
+    100%{
+        width:0;
+    }
+
+}
+.usebg{
+    z-index: -1;
+}
+
+.bgTransition{
+    transition: background-image 2s ease-in-out;
+}
+
+.cardBG{
+    background: rgba(255, 255, 255, 0.5);
+}
+      
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+}
