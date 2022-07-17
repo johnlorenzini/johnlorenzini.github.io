@@ -20,8 +20,10 @@ html{
 }
 
 .type {
-    animation: typing 11.7s steps(20), blink 1s step-end infinite;
-    animation-iteration-count: infinite;
+    animation: typing, blink;
+    animation-duration: 11.7s, 1s;
+    animation-timing-function: steps(20), step-end;
+    animation-iteration-count: infinite, infinite;
     white-space: nowrap;
     overflow: hidden;
     font-size: 2em;
