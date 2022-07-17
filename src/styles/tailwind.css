@@ -21,7 +21,6 @@ html{
 
 .type {
     animation: typing 11.7s steps(20), blink 1s step-end infinite;
-    animation-delay: 0.5s;
     animation-iteration-count: infinite;
     white-space: nowrap;
     overflow: hidden;

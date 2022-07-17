@@ -45,7 +45,7 @@ function App() {
         <button 
             type='button' 
             onClick={changeTheme}
-            className = "fixed transition ease-in-out duration-300 bg-inherit text-white dark:text-zinc-900 drop-shadow-md hover:shadow-innerXL right-4 top-12 md:right-7 md:top-7 hover:cursor-pointer text-2xl md:text-4xl p-2 md:p-4 rounded-full hover:scale-110 buttonPos">
+            className = "fixed transition ease-in-out duration-300 bg-inherit text-zinc-900 dark:text-white drop-shadow-md hover:shadow-innerXL right-4 top-12 md:right-7 md:top-7 hover:cursor-pointer text-2xl md:text-4xl p-2 md:p-4 rounded-full hover:scale-110 buttonPos">
             {theme==='light' ? <TbSun></TbSun> : <TbMoonStars></TbMoonStars>}
         </button>
         <div className='font-pop backdrop-blur-3xl usebg'>
