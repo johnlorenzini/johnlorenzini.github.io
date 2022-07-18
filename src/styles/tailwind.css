@@ -20,33 +20,14 @@ html{
 }
 
 .type {
-    animation: typing, blink;
-    animation-duration: 11.7s, 1s;
-    animation-timing-function: steps(20), step-end;
-    animation-iteration-count: infinite, infinite;
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: step-end;
+    -webkit-animation-iteration-count: infinite;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 2em;
 }
 
-@keyframes typing {
-    0% {
-      width: 0;
-    }
-    24.3%{
-        width:11.5ch;
-    }
-    50%{
-        width:11.5ch;
-    }
-    74.3%{
-        width:0;
-    }
-    100%{
-        width:0;
-    }
-
-}
 .usebg{
     z-index: -1;
 }

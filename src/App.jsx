@@ -1,6 +1,7 @@
 import React , {useState, useEffect} from 'react'
 import TypingHeader from './components/TypingHeader'
 import HeroSection from './components/HeroSection'
+import SkillsSection from './components/SkillsSection'
 import NavBar from './components/NavBar'
 import AOS from "aos"
 import "aos/dist/aos.css"
@@ -49,8 +50,9 @@ function App() {
             {theme==='light' ? <TbSun></TbSun> : <TbMoonStars></TbMoonStars>}
         </button>
         <div className='font-pop backdrop-blur-3xl usebg'>
-            <TypingHeader id="top"></TypingHeader>
-            <HeroSection theme={theme}></HeroSection>
+            <TypingHeader id="top" />
+            <HeroSection theme={theme} />
+            <SkillsSection theme={theme} />
         </div>
     </>
   )
