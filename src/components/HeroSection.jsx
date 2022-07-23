@@ -8,7 +8,7 @@ function HeroSection({theme}) {
       <div className='my-auto w-2/3 md:w-3/5'>
         <HeroCard theme={theme}></HeroCard>
       </div>
-      <NavDown target="#skills" delay="500" anchor={"#card"}></NavDown>
+      <NavDown target="#skills" delay="500" anchor={"#card"} refs="skills"></NavDown>
   
     </div>
   )
