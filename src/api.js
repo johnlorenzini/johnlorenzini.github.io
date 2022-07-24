@@ -3,7 +3,10 @@ const getRepositories = (user) => {
       const url = `https://api.github.com/users/${user}/repos`;
       const request = new XMLHttpRequest();
       request.open("GET", url);
-      request.setRequestHeader('Authorization', 'Bearer ' + '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');
+      request.setRequestHeader(
+        "accept",
+        "application/vnd.github.mercy-preview+json"
+      );
   
       request.onload = () => {
         if (request.status === 200) {

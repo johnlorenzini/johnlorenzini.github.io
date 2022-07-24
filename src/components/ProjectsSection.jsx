@@ -27,7 +27,7 @@ function ProjectsSection() {
         <ProjectCard key={index} title={item.name} description={item.description} tags={item.topics} link={item.repo_url} />
       ))}
       </div>
-      
+
       <div className='pt-8 invisible md:visible'>
         <div className='navPad self-center'>
           <div data-aos="fade-up" data-aos-easing="ease" data-aos-duration="800" className=''>
@@ -38,7 +38,7 @@ function ProjectsSection() {
           </div>
         </div>
       </div>
-      <div className='pb-10'>
+      <div className='pb-24'>
       </div>
     </div>
     
