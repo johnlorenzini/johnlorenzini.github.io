@@ -1,0 +1,31 @@
+import React from 'react'
+import { TbExternalLink } from 'react-icons/tb'
+
+const ProjectCard = ({title, description, tags, link}) => {
+    function checkTag(tag, index){
+        if(tag !== "portfolio-project"){
+            return( <span key={index} className="text-zinc-900 dark:text-white text-sm px-4 py-1 border-2 border-zinc-900 dark:border-white rounded-full">{tag}</span> );
+        }
+        else{
+            return
+        }
+        
+    }
+  return (
+    <div className="transition ease-in-out duration-500 pCard w-2/3 md:w-3/4 shadow-xl hover:shadow-2xl hover:scale-105 hover:-translate-y-2  m-4 mx-auto p-6 rounded-xl cardBG">
+        <a href={link} target="_blank">
+            <h1 className='text-xl text-center font-semibold text-zinc-900 dark:text-white'>{title}<TbExternalLink className='ml-1 inline align-top'/></h1>
+        </a>
+        <hr className="my-4 border-2 border-zinc-900 dark:border-white"/>
+        <p className='text-zinc-900 dark:text-white'>{description}</p>
+        <div className="description mt-4 mb-8 flex flex-wrap justify-center items-center gap-2">
+            {tags.map((tag, index) => (
+                checkTag(tag, index)
+            ))}
+        </div>
+
+    </div>
+  )
+}
+
+export default ProjectCard;

@@ -5,6 +5,7 @@ import SkillsSection from './components/SkillsSection'
 import AOS from "aos"
 import "aos/dist/aos.css"
 import { TbSun, TbMoonStars } from "react-icons/tb";
+import ProjectsSection from './components/ProjectsSection'
 
 function App() {
     const [theme, setTheme] = useState(null);
@@ -42,7 +43,7 @@ function App() {
     <>
         <meta name="theme-color" content={theme==="light" ? "#D59AFF" : "#542F73"} />
         <div id="top">
-            <img src={theme === 'light' ? './img/04.jpg' : './img/02.jpg'} alt="" className='w-full h-full scale-150 fixed'/>
+            <img src={theme === 'light' ? './img/light.jpg' : './img/dark.jpg'} alt="" className='w-full h-full scale-150 fixed'/>
             <button 
                 type='button' 
                 onClick={changeTheme}
@@ -60,8 +61,12 @@ function App() {
 
         <div className='font-pop backdrop-blur-3xl usebg'>
             <TypingHeader id="top" />
+            <div className='invisible md:visible h-24'></div>
             <HeroSection theme={theme} />
+            <div className='invisible md:visible h-24'></div>
             <SkillsSection theme={theme} />
+            <div className='invisible md:visible h-24'></div>
+            <ProjectsSection theme={theme} />
         </div>
     </>
   )
