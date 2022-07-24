@@ -1,7 +1,7 @@
 import React from 'react'
 import SocialBar from './SocialBar'
 
-function HeroCard({theme}) {
+function HeroCard() {
   return (
     <>
       <div id="card" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="800" className='m-auto flex justify-center py-16 cardBG shadow-xl border-2 border-white border-opacity-10 rounded-2xl'>

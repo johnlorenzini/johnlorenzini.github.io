@@ -61,9 +61,9 @@ function App() {
         <div className='font-pop backdrop-blur-3xl usebg'>
             <TypingHeader id="top" />
             <div className='invisible md:visible h-24'></div>
-            <HeroSection theme={theme} />
+            <HeroSection />
             <div className='invisible md:visible h-24'></div>
-            <SkillsSection theme={theme} />
+            <SkillsSection />
             <div className='invisible md:visible h-24'></div>
             <ProjectsSection theme={theme} />
         </div>
