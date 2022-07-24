@@ -4,7 +4,7 @@ import HeroSection from './components/HeroSection'
 import SkillsSection from './components/SkillsSection'
 import AOS from "aos"
 import "aos/dist/aos.css"
-import { TbSun, TbMoonStars } from "react-icons/tb";
+import { TbSun, TbMoonStars, TbHome } from "react-icons/tb";
 import ProjectsSection from './components/ProjectsSection'
 
 function App() {
@@ -50,11 +50,10 @@ function App() {
                 className = "fixed transition ease-in-out duration-300 bg-inherit text-zinc-900 dark:text-white drop-shadow-md hover:shadow-innerXL right-5 top-8 md:right-8 md:top-7 hover:cursor-pointer text-3xl md:text-4xl p-2 md:p-4 rounded-full hover:scale-110 buttonPos">
                 {theme==='light' ? <TbSun></TbSun> : <TbMoonStars></TbMoonStars>}
             </button>
-            <a
-            href="#top"
-            className= "fixed transition ease-in-out duration-300 drop-shadow-md hover:shadow-innerXL bg-inherit rounded-full left-5 top-6 md:left-8 md:top-6 hover:cursor-pointer p-2 md:p-4 hover:scale-110 buttonPos"
-            >
-                <img src="./img/memoji/icon.png" alt="" className='w-9 md:w-10'/>
+            <a 
+                href="#top"
+                className = "fixed transition ease-in-out duration-300 text-zinc-900 dark:text-white drop-shadow-md hover:shadow-innerXL bg-inherit rounded-full left-5 top-8 md:left-8 md:top-7 text-3xl md:text-4xl hover:cursor-pointer p-2 md:p-4 hover:scale-110 buttonPos">
+                <TbHome />
             </a>
         </div>
         
