@@ -41,7 +41,7 @@ function App() {
 
   return (
     <>
-        <meta name="theme-color" content={theme==="light" ? "#D59AFF" : "#542F73"} />
+        <meta name="theme-color" content={theme==='light' ? "#E2E2EB" : "#060606"} />
         <div id="top">
             <img src={theme === 'light' ? './img/light.jpg' : './img/dark.jpg'} alt="" className='w-full h-full scale-150 fixed'/>
             <button 
