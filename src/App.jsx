@@ -2,7 +2,6 @@ import React , {useState, useEffect} from 'react'
 import TypingHeader from './components/TypingHeader'
 import HeroSection from './components/HeroSection'
 import SkillsSection from './components/SkillsSection'
-import NavBar from './components/NavBar'
 import AOS from "aos"
 import "aos/dist/aos.css"
 import { TbSun, TbMoonStars } from "react-icons/tb";
@@ -42,13 +41,23 @@ function App() {
   return (
     <>
         <meta name="theme-color" content={theme==="light" ? "#D59AFF" : "#542F73"} />
-        <img src={theme === 'light' ? './img/04.jpg' : './img/02.jpg'} alt="" className='w-full h-full scale-150 fixed'/>
-        <button 
-            type='button' 
-            onClick={changeTheme}
-            className = "fixed transition ease-in-out duration-300 bg-inherit text-zinc-900 dark:text-white drop-shadow-md hover:shadow-innerXL right-4 top-8 md:right-7 md:top-7 hover:cursor-pointer text-3xl md:text-4xl p-2 md:p-4 rounded-full hover:scale-110 buttonPos">
-            {theme==='light' ? <TbSun></TbSun> : <TbMoonStars></TbMoonStars>}
-        </button>
+        <div id="top">
+            <img src={theme === 'light' ? './img/04.jpg' : './img/02.jpg'} alt="" className='w-full h-full scale-150 fixed'/>
+            <button 
+                type='button' 
+                onClick={changeTheme}
+                className = "fixed transition ease-in-out duration-300 bg-inherit text-zinc-900 dark:text-white drop-shadow-md hover:shadow-innerXL right-5 top-8 md:right-8 md:top-7 hover:cursor-pointer text-3xl md:text-4xl p-2 md:p-4 rounded-full hover:scale-110 buttonPos">
+                {theme==='light' ? <TbSun></TbSun> : <TbMoonStars></TbMoonStars>}
+            </button>
+            <a
+            href="#top"
+            className= "fixed transition ease-in-out duration-300 drop-shadow-md hover:shadow-innerXL bg-inherit rounded-full left-5 top-6 md:left-8 md:top-6 hover:cursor-pointer p-2 md:p-4 hover:scale-110 buttonPos"
+            >
+                <img src="./img/memoji/icon.png" alt="" className='w-9 md:w-10'/>
+            </a>
+        </div>
+        
+
         <div className='font-pop backdrop-blur-3xl usebg'>
             <TypingHeader id="top" />
             <HeroSection theme={theme} />
