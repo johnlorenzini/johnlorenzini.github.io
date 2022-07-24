@@ -23,7 +23,7 @@ function SkillsCarousel() {
   return (
     <div id="skills" className='w-2/3 flex flex-col md:grid md:gap-x-10 md:grid-rows-2 md:grid-cols-4 justify-center'>
         <div id="dev" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="800" data-aos-anchor="#skills" className='transition ease-in-out my-auto duration-300 mb-6 mt-2 col-start-2 col-span-2 row-start-1 row-span-1 cardBG shadow-xl border-2 border-white border-opacity-10 rounded-2xl'>
-            <h1 className='transition ease-in-out duration-500 text-center text-zinc-900 dark:text-white text-3xl md:text-4xl font-semibold pt-4'>coding</h1>
+            <h1 className='transition ease-in-out duration-500 text-center text-zinc-900 dark:text-white text-3xl md:text-4xl font-semibold pt-4'>code.</h1>
             <hr className='transition ease-in-out duration-500 rounded-xl border-2 my-4 border-zinc-900 dark:border-white'/>
             <div id="skillgrid" className="mx-auto transition ease-in-out duration-500 text-4xl md:text-5xl grid grid-cols-3 grid-rows-3 justify-items-center gap-2 md:gap-8 text-rose-500 dark:text-rose-400">
               <SiPython />
@@ -41,7 +41,7 @@ function SkillsCarousel() {
             </div>            
         </div>
         <div id="tech" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="800" data-aos-delay="500" data-aos-anchor="#dev" className='transition my-auto ease-in-out duration-300 mb-6 col-start-1 col-span-2 row-start-2 row-span-1 cardBG shadow-xl border-2 border-white border-opacity-10 rounded-2xl'>
-            <h1 className='transition ease-in-out duration-500 text-center text-zinc-900 dark:text-white text-3xl md:text-4xl font-semibold pt-4'>technology</h1>
+            <h1 className='transition ease-in-out duration-500 text-center text-zinc-900 dark:text-white text-3xl md:text-4xl font-semibold pt-4'>tech.</h1>
             <hr className='transition ease-in-out duration-500 rounded-xl border-2 my-4 border-zinc-900 dark:border-white'/>
             <div id="skillgrid" className="mx-auto transition ease-in-out duration-500 text-4xl md:text-5xl grid grid-cols-3 grid-rows-3 mb-4 justify-items-center gap-4 md:gap-8 text-rose-500 dark:text-rose-400">
               <SiGit />
@@ -53,7 +53,7 @@ function SkillsCarousel() {
             </div>
         </div>
         <div id="create" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="800" data-aos-delay="500" data-aos-anchor="#dev" className='transition my-auto ease-in-out duration-300 mb-6 col-start-3 col-span-2 row-start-2 row-span-1 cardBG shadow-xl border-2 border-white border-opacity-10 rounded-2xl'>
-            <h1 className='transition ease-in-out duration-500 text-center text-zinc-900 dark:text-white text-3xl md:text-4xl font-semibold pt-4'>creative</h1>
+            <h1 className='transition ease-in-out duration-500 text-center text-zinc-900 dark:text-white text-3xl md:text-4xl font-semibold pt-4'>creative.</h1>
             <hr className='transition ease-in-out duration-500 rounded-xl border-2 my-4 border-zinc-900 dark:border-white'/>
             <div id="skillgrid" className="mx-auto transition ease-in-out duration-500 text-4xl md:text-5xl grid grid-cols-3 grid-rows-3 mb-4 justify-items-center gap-4 md:gap-8 text-rose-500 dark:text-rose-400">
               <SiFigma />

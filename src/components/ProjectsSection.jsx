@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import ProjectCard from './ProjectCard';
 import getRepositories from "../api";
-import NavDown from './NavDown';
 import { FaChevronUp } from 'react-icons/fa'
 
 function ProjectsSection() {
