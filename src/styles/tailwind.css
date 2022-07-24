@@ -24,8 +24,6 @@ html{
     -webkit-animation-duration: 1s;
     -webkit-animation-timing-function: step-end;
     -webkit-animation-iteration-count: infinite;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 .usebg{

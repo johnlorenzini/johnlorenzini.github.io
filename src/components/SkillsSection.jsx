@@ -5,7 +5,10 @@ function SkillsSection() {
   return (
     <div id="skills" className="min-h-screen flex flex-col justify-center items-center">
         <SkillsCarousel />
-        <NavDown target="#projects" delay="500" anchor={"#skills"} refs="projects" />
+        <div className='hidden md:flex'>
+          <NavDown target="#projects" delay="500" anchor={"#skills"} refs="projects" className="hidden md:visible" />
+        </div>
+        
     </div>
     
   )
