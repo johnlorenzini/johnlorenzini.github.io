@@ -31,7 +31,7 @@ function ProjectsSection() {
         <div className='navPad self-center'>
           <div data-aos="fade-up" data-aos-easing="ease" data-aos-duration="800" className=''>
             <a href="#top" className="text-center">
-              <h1 className='text-center text-3xl py-2 font-medium drop-shadow-md text-zinc-900 dark:text-white'>home</h1>
+              <h1 className='text-center text-2xl py-2 font-medium drop-shadow-md text-zinc-900 dark:text-white'>home</h1>
               <FaChevronUp className='mx-20 transition mb-20 md:mb-0 ease-in-out duration-300 w-8 h-8 text-zinc-900 dark:text-white drop-shadow-md animate-bounce' />
             </a>
           </div>
