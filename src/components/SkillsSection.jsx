@@ -6,7 +6,7 @@ function SkillsSection() {
     <div id="skills" className="min-h-screen flex flex-col justify-center items-center">
         <SkillsCarousel />
         <div className='hidden md:flex'>
-          <NavDown target="#projects" delay="500" anchor={"#skills"} refs="projects" className="hidden md:visible" />
+          <NavDown target="#projects" delay="800" anchor={"#skills"} refs="projects" className="hidden md:visible" />
         </div>
         
     </div>
