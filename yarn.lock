@@ -1689,7 +1689,12 @@
   "resolved" "https://registry.npmjs.org/react-refresh/-/react-refresh-0.13.0.tgz"
   "version" "0.13.0"
 
-"react@*", "react@^18.0.0", "react@^18.2.0":
+"react-tilty@^2.0.3":
+  "integrity" "sha512-/z23wWNndBpo6bMl5ktVj+Ght1bn+IMjSBIlCn7Fd3Te51MiSU/MRPcyefa6ghK01SxCO0ISf5xaVfTcjdTOag=="
+  "resolved" "https://registry.npmjs.org/react-tilty/-/react-tilty-2.0.3.tgz"
+  "version" "2.0.3"
+
+"react@*", "react@^18.0.0", "react@^18.2.0", "react@>=16.8.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
