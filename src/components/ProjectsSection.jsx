@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import ProjectCard from './ProjectCard';
 import getRepositories from "../api";
 import { FaChevronUp } from 'react-icons/fa'
-import Tilty from 'react-tilty';
 
 
 function ProjectsSection() {
@@ -25,9 +24,7 @@ function ProjectsSection() {
     <div id="projects" className='min-h-screen flex flex-col justify-center items-center'>
       <div id="grid" className='grid grid-cols-1 md:grid-cols-2'>
       {projects.map((item, index) => (
-        <Tilty max="20" speed="900">
-          <ProjectCard key={index} title={item.name} description={item.description} tags={item.topics} link={item.repo_url} />
-        </Tilty>
+        <ProjectCard key={index} title={item.name} description={item.description} tags={item.topics} link={item.repo_url} />
       ))}
       </div>
 
