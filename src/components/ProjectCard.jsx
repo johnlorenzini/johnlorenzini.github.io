@@ -12,7 +12,7 @@ const ProjectCard = ({title, description, tags, link}) => {
         
     }
   return (
-    <div data-aos="fade-up" data-aos-easing="ease" data-aos-duration="800" className="transition ease-in-out duration-500 pCard w-2/3 md:w-3/4 shadow-xl hover:shadow-2xl hover:scale-105 hover:-translate-y-2  m-4 mx-auto p-6 rounded-xl cardBG">
+    <div data-aos="fade-up" data-aos-easing="ease" data-aos-duration="800" className="transition ease-in-out duration-500 pCard w-2/3 md:w-3/4 shadow-xl  m-4 mx-auto p-6 rounded-xl cardBG">
         <a href={link} target="_blank">
             <h1 className='text-xl text-center font-semibold text-zinc-900 dark:text-white'>{title}<TbExternalLink className='ml-1 inline align-top text-rose-500 dark:text-rose-400'/></h1>
         </a>
