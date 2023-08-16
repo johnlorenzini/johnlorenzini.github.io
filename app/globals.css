@@ -25,3 +25,37 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.contain {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.contain::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.RightToLeft {
+animation: RightToLeft 2s infinite linear;
+}
+
+@keyframes RightToLeft {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.LeftToRight {
+animation: LeftToRight 2s infinite linear;
+}
+
+@keyframes LeftToRight {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50%);
+  }
+}
