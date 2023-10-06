@@ -2,60 +2,176 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.content {
+  color: #27272a;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: start;
+  justify-content: start;
+  width: 100vw;
+  padding: 14rem 20rem 0 20rem;
+
+  /* temp value just to fill space */
+  height: 100vh;
+  /* display: none; */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.marquee-container {
+  font-size: 8rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* display: flex; */
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+  background-color: rgba(50, 50, 50, 0);
+  /* transform: scale(90%); */
+}
+
+.left-marquee {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  width: 100%;
+  height: 80px;
+  transform: rotate(-90deg) translateX(-100%) translateY(100%);
+  align-self: flex-end;
+  transform-origin: bottom left;
+  color: #27272a;
+  /* background-color: aqua; */
+}
+
+.top-marquee {
+  white-space: nowrap;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* transform: translateX(-100%) translateY(100%); */
+  height: 0px;
+  color: #27272a;
+}
+
+.right-marquee {
+  white-space: nowrap;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 80px;
+  transform: rotate(90deg) translateX(100%);
+  align-self: flex-start;
+  transform-origin: top right;
+  color: #27272a;
+  /* background-color: green; */
+}
+
+/* hover behavior */
+.right-marquee:hover {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #27272a;
+  font-style: italic;
+}
+.top-marquee:hover {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #27272a;
+  font-style: italic;
+}
+.left-marquee:hover {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #27272a;
+  font-style: italic;
+}
+.bottom-marquee:hover {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #27272a;
+  font-style: italic;
+}
+.test {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #27272a;
+}
+
+.bottom-marquee {
+  white-space: nowrap;
+  z-index: 1;
+  position: absolute;
+  bottom: 160px;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  color: #27272a;
+}
+
+.marquee {
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+}
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 40s linear infinite;
+}
+
+.marquee2 span {
+  /* this is always half of the animation speed */
+  animation-delay: -20s;
+}
+
+.marquee3 {
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+}
+
+.marquee3 span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 20s linear infinite;
+}
+
+.bottom-marquee a span {
+  animation-direction: reverse;
+}
+.bottom-marquee:hover a span {
+  animation-play-state: paused;
+}
+.top-marquee:hover a span {
+  animation-play-state: paused;
+}
+.right-marquee:hover a span {
+  animation-play-state: paused;
+}
+.left-marquee:hover a span {
+  animation-play-state: paused;
+}
+
+.marquee4 span {
+  /* this is always half of the animation speed */
+  animation-delay: -10s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-.contain {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-}
-.contain::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
-
-.RightToLeft {
-animation: RightToLeft 2s infinite linear;
-}
-
-@keyframes RightToLeft {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-50%);
-  }
-}
-
-.LeftToRight {
-animation: LeftToRight 2s infinite linear;
-}
-
-@keyframes LeftToRight {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(50%);
+  100% {
+    transform: translate(-100%, 0);
   }
 }
