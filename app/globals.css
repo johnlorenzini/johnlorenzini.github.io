@@ -7,10 +7,10 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 100vw;
-  padding: 14rem 20rem 0 20rem;
+  padding: 14rem 20rem 0 12rem;
 
   /* temp value just to fill space */
   height: 100vh;
@@ -100,7 +100,7 @@
 .test {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: #27272a;
+  -webkit-text-stroke-color: #e4e4e7;
 }
 
 .bottom-marquee {
